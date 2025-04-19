@@ -3,6 +3,8 @@
 
 This repository demonstrates **functional core and imperative shell** principles in a simple **asset tracking** and **geofencing** API. It uses **Rust** with a **vertical slice** architecture, but the approach could also apply to any modern language (like C# or Java).
 
+Here is a full article: [Applying Functional Core and Imperative Shell in Practice](https://ricofritzsche.me/applying-functional-core-and-imperative-shell-in-practice/)
+
 ## Overview
 
 - **Functional Core**: All domain logic lives in pure functions; no external dependencies, no side effects.  
@@ -71,6 +73,6 @@ Feel free to open issues or submit pull requests, especially if you have ideas t
 
 ## License
 
-This project is licensed under the [MIT License](LICENSE).
+This project is licensed under the [MIT License](/Licence.md).
 
 Enjoy experimenting with a functional core and imperative shell in your own domain!
