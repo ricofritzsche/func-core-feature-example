@@ -22,7 +22,7 @@ pub async fn track_endpoint(
         .bind(asset_id)
         .fetch_optional(db.get_ref())
         .await
-        .map_err(AppError::from)?; // 🔥 Use error conversion
+        .map_err(AppError::from)?;
 
     let parsed_old = old_status.and_then(|s| match s.as_str() {
         "Inside" => Some(GeofenceStatus::Inside),
@@ -41,7 +41,7 @@ pub async fn track_endpoint(
         .bind(format!("{:?}", new_status))
         .execute(db.get_ref())
         .await
-        .map_err(AppError::from)?; // 🔥 Consistent error mapping
+        .map_err(AppError::from)?;
 
     Ok(HttpResponse::Ok().json(TrackOutput {
         asset_id: asset_id.clone(),
