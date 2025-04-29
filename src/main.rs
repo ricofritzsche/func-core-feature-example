@@ -1,5 +1,5 @@
-mod features;
-mod shared;
+pub mod features;
+pub mod shared;
 
 use dotenvy::dotenv;
 use std::env;

@@ -23,6 +23,7 @@ pub struct TrackOutput {
 pub enum GeofenceStatus {
     Inside,
     Outside,
+    #[allow(dead_code)]
     Unknown,
 }
 
